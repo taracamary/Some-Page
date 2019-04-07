@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import logo from './logo.svg';
@@ -14,8 +15,8 @@ class App extends Component {
     return (
       <Router>
         <div className="site">
+        <Header />
           <div className="container">
-            <Header />
             <Nav />
             <Main />
             <Footer />

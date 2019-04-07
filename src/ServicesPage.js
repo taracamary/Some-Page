@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+const PUBLIC_URL = process.env.PUBLIC_URL;
+
 class ServicesPage extends Component {
   render() {
     return (

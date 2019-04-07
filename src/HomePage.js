@@ -1,11 +1,33 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+
+const PUBLIC_URL = process.env.PUBLIC_URL;
 
 class HomePage extends Component {
   render() {
     return (
       <div className="home-page">
-        <h1>Главная страница</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique possimus inventore velit alias facilis asperiores accusantium, fuga iusto repellat quia veritatis facere culpa officiis consectetur dolorum, molestias magni distinctio iste?</p>
+        <h2>Some Of Our Work</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
+          possimus inventore velit alias facilis asperiores accusantium, fuga
+          iusto repellat quia veritatis facere culpa officiis consectetur
+          dolorum, molestias magni distinctio iste?
+        </p>
+        <hr />
+
+        <div className="sl_ctr">
+          <div className="sldr">
+            <img className="logo" src={PUBLIC_URL + "/images/1.png"} />
+            <img className="logo" src={PUBLIC_URL + "/images/2.png"} />
+            <img className="logo" src={PUBLIC_URL + "/images/3.png"} />
+            <img className="logo" src={PUBLIC_URL + "/images/4.png"} />
+            <img className="logo" src={PUBLIC_URL + "/images/5.png"} />
+            <img className="logo" src={PUBLIC_URL + "/images/6.png"} />
+          </div>
+          <div className="prv_b"></div>
+          <div className="nxt_b"></div>
+        </div>
+
       </div>
     );
   }
