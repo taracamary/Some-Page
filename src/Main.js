@@ -12,12 +12,12 @@ const PUBLIC_URL = process.env.PUBLIC_URL;
 class Main extends Component {
   render() {
     return (
-      <main className="main">
+      <section className="main">
         <Route exact path="/" component={HomePage} />
         <Route path="/about/" component={AboutPage} />
         <Route path="/services/" component={ServicesPage} />
         <Route path="/contact/" component={ContactPage} />
-      </main>
+      </section>
     );
   }
 }
