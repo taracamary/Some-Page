@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <Router>
         <div className="site">
-        <Header />
+          {window.location.pathname == '/' ? <Header /> : ''}
           <div className="container">
             <Nav />
             <Main />

@@ -110,3 +110,25 @@ header h2 img {
   width: 150px;
   height: auto;
 }
+
+header nav:not(.home) {
+  color: #000;
+}
+
+.nav_toggle {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .nav_toggle {
+    display: block;
+  }
+
+  header nav li {
+    display: none;
+  }
+
+  header nav .active {
+    display: block;
+  }
+}
