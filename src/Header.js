@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
+import './Header.css';
+
 const PUBLIC_URL = process.env.PUBLIC_URL;
 
 class Header extends Component {
   render() {
     return (
-      <section className="header">
+      <section className="header" scroll="no">
         <h1>Something Nothing</h1>
         <div class="img">
           <p class="title">

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import logo from './logo.svg';
 import './App.css';
@@ -19,7 +19,7 @@ class App extends Component {
           <div className="container">
             <Nav />
             <Main />
-            <Footer />
+            {window.location.pathname !== '/' ? <Footer /> : ''}
           </div>
         </div>
       </Router>
