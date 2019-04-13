@@ -1,67 +1,4 @@
-/* .navigation {
-    position: relative;
-    top: -100vh;
-    margin: 0 auto;
-    margin-top: 4vh;
-  }
-
-  ul {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 50%;
-  }
-
-  ul li {
-    display: inline;
-    text-align: center;
-  }
-
-  a {
-    display: inline-block;
-    width: 25%;
-    padding: 15px 20px;
-    margin: 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    opacity: 0.9;
-  }
-
-  a:hover{
-    opacity: 1;
-  }
-
-  .two:hover ~ hr {
-    margin-left: 25%;
-  }
-
-  .three:hover ~ hr {
-    margin-left: 50%;
-  }
-
-  .four:hover ~ hr {
-    margin-left: 75%;
-  }
-
-  .navigation hr {
-    height: 0.25rem;
-    width: 25%;
-    margin: 0;
-    background: #fff;
-    border: none;
-    transition: 0.5s ease-in-out;
-  }
-
-  .logo_header {
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin-top: 25px;
-    } */
-
-ul,
-nav {
+ul {
   list-style: none;
 }
 
@@ -69,51 +6,63 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-
   opacity: 0.9;
 }
 
-a:hover {
+ul a:hover {
   opacity: 1;
 }
 
-header {
+.navigator {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #fff;
+  font-weight: bold;
   padding: 35px 100px 0;
 }
 
-header nav {
+.navigator nav ul {
   display: flex;
 }
 
-header nav li {
+.navigator nav ul li {
   margin: 0 15px;
 }
 
-header nav li:first-child {
+.navigator nav ul li:first-child {
   margin-left: 0;
 }
 
-header nav li:last-child {
+.navigator nav ul li:last-child {
   margin-right: 0;
 }
 
-header h2 img {
+.navigator h2 img {
   width: 150px;
   height: auto;
 }
 
-header nav:not(.home) {
+/* Навигация не на главной странице */
+.navigator nav:not(.home) {
+  font-weight: bold;
   color: #000;
 }
+
+.navigator-other {
+  opacity: 0.5;
+  background-color: rgb(248, 234, 234);
+  padding-bottom: 35px;
+}
+/* .navigator:not(.home) {
+  opacity: 0.5;
+  background-color: rgb(248, 234, 234);
+  padding-bottom: 35px;
+} */
 
 .nav_toggle {
   display: none;
@@ -124,11 +73,11 @@ header nav:not(.home) {
     display: block;
   }
 
-  header nav li {
+  .navigator nav li {
     display: none;
   }
 
-  header nav .active {
+  .navigator nav .active {
     display: block;
   }
 }

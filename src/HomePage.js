@@ -6,7 +6,7 @@ class HomePage extends Component {
   render() {
     return (
       <section>
-      
+        
       </section>
     );
   }

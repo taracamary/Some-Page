@@ -7,7 +7,7 @@ const PUBLIC_URL = process.env.PUBLIC_URL;
 class Nav extends Component {
   render() {
     return (
-      <header>
+      <div className={window.location.pathname == '/' ? "navigator": 'navigator navigator-other'}> 
         <h2>
           <a  href="/"><img
             className="logo_header"
@@ -17,20 +17,20 @@ class Nav extends Component {
         </h2>
         <nav className= {window.location.pathname == '/' ? 'home' : ''}>
           <div className="nav_toggle" onClick={function(event) { event.target.closest('nav').querySelector('li').classList.toggle('active'); }}>Menu</div>
-          <li>
+          <ul><li>
             <a href="/">Home</a>
           </li>
-          <li className="two">
+          <li>
             <a href="/about/">About</a>
           </li>
-          <li className="three">
+          <li>
             <a href="/services/">Services</a>
           </li>
-          <li className="four">
+          <li>
             <a href="/contact/">Contacts</a>
-          </li>
+          </li></ul>
         </nav>
-      </header>
+      </div>
     );
   }
 }
