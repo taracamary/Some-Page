@@ -1,0 +1,30 @@
+.flex-container {
+    display: flex; /* Флексы */
+    height: 300px; /* Высота */
+    width:100%;
+    color: #fff; /* Белый цвет текста */
+    font-size: 2.6em; /* Размер шрифта */
+    flex-flow: column wrap; /* Располагаем в виде колонок */
+  }
+  .flex-item {
+    display: flex; /* Флексы */
+    align-items: center; /* Выравнивание текста по вертикали */
+    justify-content: center; /* Выравнивание текста по горизонтали */
+  }
+  .one {
+    background: #508694; /* Цвет фона */
+    margin-right: 10px; /* Отступ справа */
+    flex-basis: 100%;
+    order: 1; /* Первый блок */
+  }
+  .two {
+    background: #bb844c; /* Цвет фона */
+    margin-bottom: 10px; /* Отступ снизу */
+    flex: 1 1 0;
+    order: 2; /* Второй блок */
+  }
+  .three {
+    background: #929d79; /* Цвет фона */
+    flex: 1 1 0;
+    order: 3; /* Третий блок */
+  }

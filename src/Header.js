@@ -17,10 +17,9 @@ class Header extends Component {
           </p>
           <div class="overlay" />
           <div class="button">
-            <a href="#"> More... </a>
+            <a href="about"> More... </a>
           </div>
         </div>
-        <img className="arrow" src={PUBLIC_URL + '/images/arrow.png'} />
       </section>
     );
   }

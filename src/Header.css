@@ -80,16 +80,6 @@ h1 {
   opacity: 1;
 }
 
-/* Arrow style */
-.arrow {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -25px;
-  cursor: pointer;
-}
-
-
 
 
 @media (max-width: 1000px){

@@ -29,15 +29,7 @@
 }
 
 
-/* Slider */
-.sl_ctr {
-  position: relative;
-  width: 128vh;
-  height: 72vh;
-  border: 2px solid black;
-  overflow: hidden;
-  border: 2px solid #2196f3;
-}
+
 
 
 
