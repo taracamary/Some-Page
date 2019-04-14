@@ -5,6 +5,7 @@
   text-align: center;
   margin-top: 20vh;
   color: #414a4f;
+  flex: 1 0 auto;
 }
 
 .about-page p {
@@ -23,6 +24,35 @@
   background-color: #2196f3;
   border: 0;
   margin-bottom: 80px;
+}
+
+/* Container styles */
+.container {
+  margin: 0 auto;
+  padding: 40px;
+  width: 100%;
+  color: #333;
+  
+}
+.slick-slide img {
+  height: 720px;
+  width: 1280px;
+  /* border: 2px solid #000; */
+}
+.slick-slider {
+  margin: 5px auto 20px;
+}
+.slick-dots {
+  margin-left: 0;
+}
+.slick-arrow {
+  opacity: .7;
+}
+.slick-arrow:hover {
+  opacity: 0.9;
+}
+.slick-next:before, .slick-prev:before {
+  color: #000;
 }
 
 

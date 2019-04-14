@@ -11,9 +11,11 @@ class AboutPage extends Component {
     const settings = {
       dots: true,
       infinite: true,
-      speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      pauseOnHover: true
     };
     return (
       <section className="about-page">
@@ -27,27 +29,20 @@ class AboutPage extends Component {
           </p> 
         </div> 
         <hr />
-        
-        <div>
-        <h2> Single Item</h2>
+
+<div className="container">
         <Slider {...settings}>
           <div>
-            <h3>1</h3>
+          <img src={PUBLIC_URL + '/images/1.png'} alt="thumb" />
           </div>
           <div>
-            <h3>2</h3>
+          <img src={PUBLIC_URL + '/images/2.png'} alt="thumb" />            
           </div>
           <div>
-            <h3>3</h3>
+            <img src={PUBLIC_URL + '/images/3.png'} alt="thumb" />  
           </div>
           <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
+            <img src={PUBLIC_URL + '/images/4.png'} alt="thumb" />  
           </div>
         </Slider>
       </div>

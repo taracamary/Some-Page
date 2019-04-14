@@ -2,4 +2,6 @@
   background-color: #666;
   text-align: center;
   color: #999;
+  flex: 0 0 auto;
+  margin-top: 20px;
 }
