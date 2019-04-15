@@ -19,7 +19,7 @@ class AboutPage extends Component {
     };
     return (
       <section className="about-page">
-        <div>
+      
           <h2> Some Of Our Work </h2> 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.Similique
@@ -27,10 +27,9 @@ class AboutPage extends Component {
             iusto repellat quia veritatis facere culpa officiis consectetur
             dolorum, molestias magni distinctio iste ?
           </p> 
-        </div> 
         <hr />
-
-<div className="container">
+        <div className="wrapper">
+      <div className="container">
         <Slider {...settings}>
           <div>
           <img src={PUBLIC_URL + '/images/1.png'} alt="thumb" />
@@ -46,7 +45,7 @@ class AboutPage extends Component {
           </div>
         </Slider>
       </div>
-        
+      </div>
       </section>
     );
   }

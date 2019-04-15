@@ -9,14 +9,14 @@ class Header extends Component {
     return (
       <section className="header" scroll="no">
         <h1>Something Nothing</h1>
-        <div class="img">
-          <p class="title">
+        <div className="img">
+          <p className="title">
             Enean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
             consequat vitae, eleifend ac, enim iam ultricies nisi eleifend
             tellus.
           </p>
-          <div class="overlay" />
-          <div class="button">
+          <div className="overlay" />
+          <div className="button">
             <a href="about"> More... </a>
           </div>
         </div>

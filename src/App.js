@@ -16,11 +16,12 @@ class App extends Component {
       <Router>
         <div className="site">
           {window.location.pathname == '/' ? <Header /> : ''}
-          <div className="wrapper">
+          
             <Nav />
+            
             <Main />
             {window.location.pathname !== '/' ? <Footer /> : ''}
-          </div>
+          
         </div>
       </Router>
     );

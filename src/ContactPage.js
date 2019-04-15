@@ -9,7 +9,7 @@ class ContactPage extends Component {
     return (
       <div>
         <section className="contact-page">
-          <div>
+        
             <h2>Features And Services</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -17,9 +17,8 @@ class ContactPage extends Component {
               accusantium, fuga iusto repellat quia veritatis facere culpa
               officiis consectetur dolorum, molestias magni distinctio iste?
             </p>
-          </div>
           <hr />
-
+          <div className="wrapper">
           <ul className="grid">
             <li>
               <i className="fa fa-camera-retro" />
@@ -45,7 +44,7 @@ class ContactPage extends Component {
                 id felis et ipsum bibendum ultrices vitae pulvinar velit.
               </p>
             </li>
-          </ul>
+          </ul></div>
         </section>
 
         <section className="reviews">
@@ -80,7 +79,11 @@ class ContactPage extends Component {
             aliquam dictum sapien, id sagittis augue malesuada eu.
           </p>
           <hr />
-
+          <div class="modal">
+            <img src="http://poli.hu/angolblog/wp-content/uploads/2015/10/Hello-Graphics-37.gif" alt=""/>
+            <div class="modal__close">&times</div>
+          </div>
+  
           <form>
             <input type="email" placeholder="Email" />
             <a href="/" class="btn">

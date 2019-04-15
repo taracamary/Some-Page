@@ -1,3 +1,12 @@
+.wrapper {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .about-page {
   display: flex;
   flex-direction: column;
@@ -9,9 +18,11 @@
 }
 
 .about-page p {
+  text-align: center;
+  margin-top: 15px;
   max-width: 500px;
-  line-height: 2;
   margin-bottom: 35px;
+  line-height: 2;
 }
 
 .about-page h2 {
@@ -26,7 +37,6 @@
   margin-bottom: 80px;
 }
 
-/* Container styles */
 .container {
   margin: 0 auto;
   padding: 40px;
@@ -34,9 +44,11 @@
   color: #333;
   
 }
+
+/* SLIDER */
 .slick-slide img {
-  height: 720px;
-  width: 1280px;
+  height: 72vh;
+  width: 128vh;
   /* border: 2px solid #000; */
 }
 .slick-slider {

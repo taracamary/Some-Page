@@ -1,3 +1,12 @@
+.wrapper {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .contact-page h2 {
   margin-top: 20vh;
   text-align: center;
@@ -14,9 +23,7 @@
   margin-bottom: 35px;
 }
 
-.contact-page p,
-.reviews p,
-.contact p {
+p {
   text-align: center;
   margin-top: 15px;
   max-width: 500px;
@@ -31,8 +38,7 @@
   align-items: center;
 }
 
-.contact-page hr,
-.contact hr {
+hr {
   width: 150px;
   height: 2px;
   background-color: #2196f3;
@@ -45,6 +51,7 @@ ul.grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 80px;
 }
 
 .contact-page .grid li {
@@ -69,7 +76,7 @@ ul.grid {
   margin: 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .contact-page .grid li {
     flex-basis: 70%;
     margin-bottom: 65px;
@@ -94,6 +101,7 @@ ul.grid {
     flex-direction: column;
     align-items: center;
     padding: 125px 100px;
+    background-color: #f7f7f7;
 }
 
 .reviews .author {
@@ -156,9 +164,9 @@ a.btn {
   text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .contact form input {
     flex-basis: 100%;
-    margin: 0 0 20px 0;
+    margin: 20px 0 20px 0;
   }
 }

@@ -16,7 +16,8 @@ class Nav extends Component {
           /></a>
         </h2>
         <nav className= {window.location.pathname == '/' ? 'home' : ''}>
-          <div className="nav_toggle" onClick={function(event) { event.target.closest('nav').querySelector('li').classList.toggle('active'); }}>Menu</div>
+          <div className="nav_toggle" onClick={function(event) {
+             event.target.closest('nav').querySelector('ul').querySelectorAll('li').forEach(e=>{e.classList.toggle('active')})}}><i class="fa fa-bars"></i></div>
           <ul><li>
             <a href="/">Home</a>
           </li>
