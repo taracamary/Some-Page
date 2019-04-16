@@ -17,7 +17,7 @@ class Header extends Component {
           </p>
           <div className="overlay" />
           <div className="button">
-            <a href="about"> More... </a>
+            <a href="/about/"> More... </a>
           </div>
         </div>
       </section>

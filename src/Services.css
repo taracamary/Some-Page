@@ -29,6 +29,7 @@
 }
 
 /* Hover IMG */
+
 .videos__item {
   /*transform: translate(-50%,-50%);*/
   position: relative;
@@ -36,6 +37,7 @@
   height: 200px;
   overflow: hidden;
 }
+
 .videos__item .imgBx,
 .videos__item .details {
   width: 100%;
@@ -43,31 +45,38 @@
   box-sizing: border-box;
   transition: 1.2s;
 }
+
 .videos__item .imgBx {
   top: 0;
   left: 0;
 }
+
 .videos__item:hover .imgBx {
   position: relative;
   top: 0;
   left: -100%;
 }
+
 .videos__item:hover .details {
   position: absolute;
 }
+
 .videos__item .imgBx img {
   width: 100%;
 }
+
 .videos__item .details {
   background: #262626;
   top: 0;
   left: 100%;
   padding: 20px 10px;
 }
+
 .videos__item:hover .details {
   top: 0;
   left: 0%;
 }
+
 .videos__item .details h2 {
   color: #fff;
   text-align: center;
@@ -75,7 +84,6 @@
   padding: 0 0 10px;
   border-bottom: 2px solid #fff;
   font-size: 16px;
-
 }
 .videos__item .details p {
   margin: 20px 0 0;
@@ -84,32 +92,42 @@
 }
 
 /* Videos wrapper */
-.videos__wrapper {
+
+.videos__wrapper,
+.videos__wrapper2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 8vh;
 }
 
-.videos__wrapper .videos__item {
+.videos__wrapper2 {
+  margin-bottom: 8vh;
+}
+
+.videos__wrapper .videos__item,
+.videos__wrapper2 .videos__item {
   width: 320px;
   height: 199px;
   margin: 1vh 5vh;
   transition: 1s all;
   cursor: pointer;
-  box-shadow: 0 0 30px rgba(0, 0, 0, .3)
+  box-shadow: 0 0 30px rgba(0, 0, 0, .3);
 }
 
-.videos__wrapper .videos__item img {
+.videos__wrapper .videos__item img,
+.videos__wrapper2 .videos__item img {
   width: 100%;
 }
 
-.videos__wrapper .videos__item-active {
-  transform: translateY(50px)
+.videos__wrapper .videos__item-active,
+.videos__wrapper2 .videos__item-active {
+  transform: translateY(50px);
 }
 
 @media (max-width: 420px) {
-  .videos__wrapper .videos__item {
+  .videos__wrapper .videos__item,
+  .videos__wrapper2 .videos__item {
     margin: 1vh 0;
   }
 }
@@ -129,7 +147,7 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, .3);
   color: #fff;
   font-weight: 500;
-  font-size: 18px
+  font-size: 18px;
 }
 
 .more:hover {
@@ -137,5 +155,5 @@
 }
 
 .more:focus {
-  outline: 0
+  outline: 0;
 }

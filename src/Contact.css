@@ -93,15 +93,14 @@ ul.grid {
   }
 }
 
-/*--------------------
- 	Reviews Section
---------------------*/
+/* Reviews Section */
+   
 .reviews {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 125px 100px;
-    background-color: #f7f7f7;
+  flex-direction: column;
+  align-items: center;
+  padding: 125px 100px;
+  background-color: #f7f7f7;
 }
 
 .reviews .author {
@@ -123,15 +122,13 @@ ul.grid {
   }
 }
 
-/*---------------------
- 	Contact Section
----------------------*/
+/* Contact Section */
 
 .contact {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 125px 100px;
+  flex-direction: column;
+  align-items: center;
+  padding: 125px 100px;
 }
 
 .contact form {
@@ -159,7 +156,7 @@ a.btn {
   color: #fff;
   border-radius: 4px;
   text-transform: uppercase;
-  background-color: #2196F3;
+  background-color: #2196f3;
   font-weight: 800;
   text-align: center;
 }
@@ -170,3 +167,33 @@ a.btn {
     margin: 20px 0 20px 0;
   }
 }
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 5px 5px 40px rgba(0,0,0, .8);
+}
+
+.modal img {
+  width: 60%;
+  height: 60%;
+}
+
+.modal__close {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  font-size: 26px;
+  font-weight: 300;
+  cursor: pointer;
+}
+

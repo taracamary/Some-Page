@@ -9,13 +9,33 @@ class Footer extends Component {
     return (
       <footer className="footer">
         <ul>
-			    <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-			    <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-			    <li><a href="#"><i class="fa fa-snapchat-square"></i></a></li>
-			    <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
-			    <li><a href="#"><i class="fa fa-github-square"></i></a></li>
-		    </ul>
-        <p>Copyright © 2014 dotSquare. All rights reserved.</p>
+          <li>
+            <a href="#">
+              <i className="fa fa-twitter-square" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i className="fa fa-facebook-square" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i className="fa fa-snapchat-square" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i className="fa fa-pinterest-square" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i className="fa fa-github-square" />
+            </a>
+          </li>
+        </ul>
+        <p>Copyright © 2019 dotSquare. All rights reserved.</p>
       </footer>
     );
   }

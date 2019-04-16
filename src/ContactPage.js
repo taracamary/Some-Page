@@ -9,42 +9,45 @@ class ContactPage extends Component {
     return (
       <div>
         <section className="contact-page">
-        
-            <h2>Features And Services</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Similique possimus inventore velit alias facilis asperiores
-              accusantium, fuga iusto repellat quia veritatis facere culpa
-              officiis consectetur dolorum, molestias magni distinctio iste?
-            </p>
+          <h2>Features And Services</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
+            possimus inventore velit alias facilis asperiores accusantium, fuga
+            iusto repellat quia veritatis facere culpa officiis consectetur
+            dolorum, molestias magni distinctio iste?
+          </p>
           <hr />
           <div className="wrapper">
-          <ul className="grid">
-            <li>
-              <i className="fa fa-camera-retro" />
-              <h4>Photography</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                id felis et ipsum bibendum ultrices vitae pulvinar velit.
-              </p>
-            </li>
-            <li>
-              <i className="fa fa-cubes" />
-              <h4>Web Development</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                id felis et ipsum bibendum ultrices vitae pulvinar velit.
-              </p>
-            </li>
-            <li>
-              <i className="fa fa-newspaper-o" />
-              <h4>Content Editing</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                id felis et ipsum bibendum ultrices vitae pulvinar velit.
-              </p>
-            </li>
-          </ul></div>
+            <ul className="grid">
+              <li>
+                <i className="fa fa-camera-retro" />
+                <h4>Photography</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam id felis et ipsum bibendum ultrices vitae pulvinar
+                  velit.
+                </p>
+              </li>
+              <li>
+                <i className="fa fa-cubes" />
+                <h4>Web Development</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam id felis et ipsum bibendum ultrices vitae pulvinar
+                  velit.
+                </p>
+              </li>
+              <li>
+                <i className="fa fa-newspaper-o" />
+                <h4>Content Editing</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam id felis et ipsum bibendum ultrices vitae pulvinar
+                  velit.
+                </p>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section className="reviews">
@@ -71,22 +74,26 @@ class ContactPage extends Component {
           <p className="author">— Kevin Blake</p>
         </section>
 
-        <section class="contact">
-          <h2 class="title">Join our newsletter</h2>
+        <section className="contact">
+          <h2 className="title">Join our newsletter</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id
             felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed
             aliquam dictum sapien, id sagittis augue malesuada eu.
           </p>
           <hr />
-          <div class="modal">
-            <img src="http://poli.hu/angolblog/wp-content/uploads/2015/10/Hello-Graphics-37.gif" alt=""/>
-            <div class="modal__close">&times</div>
+          
+          <div className="modal">
+            <img
+              src="http://poli.hu/angolblog/wp-content/uploads/2015/10/Hello-Graphics-37.gif"
+              alt=""
+            />
+            <div className="modal__close"></div>
           </div>
-  
+
           <form>
             <input type="email" placeholder="Email" />
-            <a href="/" class="btn">
+            <a href="#" className ="btn">
               Subscribe now
             </a>
           </form>

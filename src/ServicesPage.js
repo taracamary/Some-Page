@@ -74,7 +74,7 @@ class ServicesPage extends Component {
         </div>
         {this.state.showMore ? null : (
           <button
-            class="more"
+            className="more"
             onClick={() => {
               this.setState({ showMore: true });
             }}
@@ -84,7 +84,7 @@ class ServicesPage extends Component {
         )}
 
         {this.state.showMore ? (
-          <div className="videos__wrapper">
+          <div className="videos__wrapper2">
             <div className="videos__item">
               <div className="imgBx">
                 <img src={PUBLIC_URL + '/images/11.png'} alt="thumb" />
