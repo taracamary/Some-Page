@@ -58,6 +58,7 @@ ul a:hover {
   color: #fff;
   font-size: 20px;
   text-shadow: 0 0 20px rgba(0, 0, 0, .7);  
+      align-items: center;
 }
 
 .navigator-other {
@@ -79,6 +80,10 @@ ul a:hover {
     margin-top: 2vh;
   }
 
+  .navigator nav ul li {
+    margin: 0 5px;
+  }
+
   .nav_toggle {
     display: block;
     position: absolute;
@@ -93,5 +98,23 @@ ul a:hover {
 
   .navigator nav .active {
     display: block;
+  }
+}
+
+@media (max-width: 320px) {
+  .navigator ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navigator nav .active {
+    margin: 0;
+    text-align: center;
+    position: relative;
+  }
+
+  .navigator-other {
+    position: relative;
+    margin-bottom: 20px;
   }
 }

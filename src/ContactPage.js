@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import './Contact.css';
 
+import './scripts.js';
+
 const PUBLIC_URL = process.env.PUBLIC_URL;
 
 class ContactPage extends Component {
@@ -93,7 +95,7 @@ class ContactPage extends Component {
 
           <form>
             <input type="email" placeholder="Email" />
-            <a href="#" className ="btn">
+            <a href="#" className ="btn click">
               Subscribe now
             </a>
           </form>

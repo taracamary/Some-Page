@@ -197,3 +197,9 @@ a.btn {
   cursor: pointer;
 }
 
+@media (max-width: 320px) {
+  .contact-page h2 {
+    margin-top: 0;
+  }
+}
+

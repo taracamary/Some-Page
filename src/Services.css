@@ -6,6 +6,12 @@
   margin-bottom: 35px;
 }
 
+@media (max-width: 320px) {
+  .works h2 {
+    margin-top: 0;
+  }
+}
+
 .works p {
   text-align: center;
   margin-top: 15px;
@@ -129,6 +135,12 @@
   .videos__wrapper .videos__item,
   .videos__wrapper2 .videos__item {
     margin: 1vh 0;
+  }
+}
+
+@media (max-width: 1202px) {
+  .videos__wrapper2 {
+    margin-top: 0;
   }
 }
 
