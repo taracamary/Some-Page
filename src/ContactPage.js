@@ -2,11 +2,35 @@ import React, { Component } from 'react';
 
 import './Contact.css';
 
-import './scripts.js';
+// import './scripts.js';
 
 const PUBLIC_URL = process.env.PUBLIC_URL;
 
 class ContactPage extends Component {
+
+state={
+  visible: false
+}
+componentDidMount() {
+  document.addEventListener('mousedown', this.handleClickOutside);
+}
+
+componentWillUnmount() {
+  document.removeEventListener('mousedown', this.handleClickOutside);
+}
+setWrapperRef = (node) => {
+  this.wrapperRef = node;
+}
+
+handleClickOutside = (event) => {
+  if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+    this.setState({visible: false})
+  }
+}
+
+onSubscribeHandler = ()=> {
+  this.setState({visible: true});
+}
   render() {
     return (
       <div>
@@ -85,17 +109,16 @@ class ContactPage extends Component {
           </p>
           <hr />
           
-          <div className="modal">
+          {this.state.visible ? <div className="modal" tabIndex="1" ref={this.setWrapperRef} >
             <img
               src="http://poli.hu/angolblog/wp-content/uploads/2015/10/Hello-Graphics-37.gif"
               alt=""
             />
-            <div className="modal__close"></div>
-          </div>
+          </div> : null}
 
           <form>
             <input type="email" placeholder="Email" />
-            <a href="#" className ="btn click">
+            <a href="#" className ="btn click" onClick={this.onSubscribeHandler}>
               Subscribe now
             </a>
           </form>
