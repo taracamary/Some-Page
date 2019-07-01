@@ -176,6 +176,7 @@ a.btn {
   transform: translateX(-50%) translateY(-50%);
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 50%;
   height: 50%;
   background-color: #fff;
@@ -183,9 +184,9 @@ a.btn {
   box-shadow: 5px 5px 40px rgba(0,0,0, .8);
 }
 
-.modal img {
-  width: 60%;
-  height: 60%;
+.modal .text {
+  width: 50%;
+  height: 50%;
 }
 
 .modal__close {

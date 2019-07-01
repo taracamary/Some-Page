@@ -57,6 +57,7 @@ h1 {
 
 .img:hover .title {
   top: 80px;
+  cursor: pointer;
 }
 
 .img .button {
@@ -106,6 +107,7 @@ h1 {
     width: 300px;
     height: 300px;
     margin: -250px 0 0 -150px;
+
   }
 
   .img .title {

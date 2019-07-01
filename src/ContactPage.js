@@ -110,10 +110,21 @@ onSubscribeHandler = ()=> {
           <hr />
           
           {this.state.visible ? <div className="modal" tabIndex="1" ref={this.setWrapperRef} >
-            <img
+
+          <div className="text">
+          <h2>Success! You're now subscribed</h2>
+          <p>
+          You've been successfully subscribed. Check your Inbox soon for great emails from this sender.
+          </p>
+          <p>
+          <i>(Close this window by clicking outside.)</i>
+          </p>
+          </div>
+            {/* <img src={PUBLIC_URL + '/images/subscr.png'} alt="thumb" /> */}
+            {/* <img
               src="http://poli.hu/angolblog/wp-content/uploads/2015/10/Hello-Graphics-37.gif"
               alt=""
-            />
+            /> */}
           </div> : null}
 
           <form>
